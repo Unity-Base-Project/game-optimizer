@@ -20,11 +20,11 @@ namespace LamHD.GameOptimizer.Editor
             GUILayout.FlexibleSpace();
 
             // Hiển thị tên Scene đang mở ở nhãn nút
-            string activeSceneName = "Scenes \u25BC";
+            string activeSceneName = "Scenes";
             var activeScene = SceneManager.GetActiveScene();
             if (activeScene.IsValid() && !string.IsNullOrEmpty(activeScene.name))
             {
-                activeSceneName = activeScene.name + " \u25BC";
+                activeSceneName = activeScene.name;
             }
 
             var content = new GUIContent(activeSceneName, "Chuyển nhanh các Scene có trong Build Settings");
