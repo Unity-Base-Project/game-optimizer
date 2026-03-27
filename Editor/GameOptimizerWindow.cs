@@ -6,10 +6,11 @@ namespace LamHD.GameOptimizer.Editor
     public class GameOptimizerWindow : EditorWindow
     {
         private int _selectedTab;
-        private readonly string[] _tabNames = { "🧹 Clean Missing Scripts", "🔍 Find Missing References" };
+        private readonly string[] _tabNames = { "🧹 Clean Missing Scripts", "🔍 Find Missing References", "📦 Unused Resources" };
 
         private CleanMissingScriptsTab _cleanMissingScriptsTab;
         private FindMissingReferencesTab _findMissingReferencesTab;
+        private FindUnusedResourcesTab _findUnusedResourcesTab;
 
         private Vector2 _scrollPosition;
 
@@ -29,6 +30,7 @@ namespace LamHD.GameOptimizer.Editor
         {
             _cleanMissingScriptsTab = new CleanMissingScriptsTab();
             _findMissingReferencesTab = new FindMissingReferencesTab();
+            _findUnusedResourcesTab = new FindUnusedResourcesTab();
         }
 
         private void OnGUI()
@@ -64,7 +66,7 @@ namespace LamHD.GameOptimizer.Editor
                 normal = { textColor = new Color(0.6f, 0.6f, 0.6f) },
                 padding = new RectOffset(0, 15, 12, 0)
             };
-            GUILayout.Label("v1.0.0", versionStyle);
+            GUILayout.Label("v1.1.0", versionStyle);
 
             GUILayout.EndHorizontal();
             GUILayout.EndArea();
@@ -123,6 +125,9 @@ namespace LamHD.GameOptimizer.Editor
                     break;
                 case 1:
                     _findMissingReferencesTab?.OnGUI();
+                    break;
+                case 2:
+                    _findUnusedResourcesTab?.OnGUI();
                     break;
             }
 

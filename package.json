@@ -1,6 +1,6 @@
 {
   "name": "com.lamhd.gameoptimizer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Game Optimizer",
   "description": "A comprehensive Unity Editor tool for game optimization and cleanup. Features include cleaning missing scripts and finding missing references across scenes and prefabs.",
   "unity": "6000.0",

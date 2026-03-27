@@ -15,6 +15,14 @@ A comprehensive Unity Editor tool for game optimization and cleanup.
 - **Project-wide Scan**: Check all prefabs across the project
 - Clickable results for quick navigation
 
+### 📦 Find Unused Resources
+- Detect assets in `Resources/` folders that are never referenced
+- Cross-references dependencies from Scenes, Prefabs, and ScriptableObjects
+- Scans C# scripts for `Resources.Load()` calls
+- Shows file sizes to identify biggest savings
+- Select & delete unused assets directly from the tool
+- Configurable scan options (toggle Scenes/Prefabs/ScriptableObjects/Scripts)
+
 ## Installation
 
 ### Via Git URL (Unity Package Manager)
