@@ -20,12 +20,12 @@ A comprehensive Unity Editor tool for game optimization and cleanup.
 ### Via Git URL (Unity Package Manager)
 1. Open **Window → Package Manager**
 2. Click **+** → **Add package from git URL**
-3. Enter: `https://github.com/lamhd/game-optimizer.git`
+3. Enter: `https://github.com/Unity-Base-Project/game-optimizer.git`
 
 ### Via manifest.json
 Add to your `Packages/manifest.json`:
 ```json
-"com.lamhd.gameoptimizer": "https://github.com/lamhd/game-optimizer.git"
+"com.lamhd.gameoptimizer": "https://github.com/Unity-Base-Project/game-optimizer.git"
 ```
 
 ## Usage
